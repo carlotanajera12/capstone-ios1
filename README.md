@@ -28,6 +28,8 @@ College Success Toolkit is an education-focused iOS app designed to support UNCC
 - Includes API integration, TableViews, Navigation, TabBar, and UserDefaults.  
 - Stretch goals can be added without disrupting core functionality.
 
+---
+
 ## **User Features**
 
 ### **Required (MVP) Features**
@@ -58,13 +60,14 @@ College Success Toolkit is an education-focused iOS app designed to support UNCC
 
 ---
 
-### **Optional (Stretch) Features**
+## **Optional (Stretch) Features**
 - Favorite quotes saved locally.
 - Task categories (Academic, Personal, Urgent).
 - Search bar for resources.
 - Custom color themes inspired by UNCC branding.
 - Simple habit tracker.
 
+---
 
 ## **Screen Archetypes**
 
@@ -95,6 +98,7 @@ College Success Toolkit is an education-focused iOS app designed to support UNCC
 - Description of the resource.
 - Button to open external link in Safari.
 
+---
 
 ## **Navigation Flow**
 
@@ -103,8 +107,6 @@ The app uses a TabBarController with three tabs:
 1. **Motivation**
 2. **Tasks**
 3. **Resources**
-
----
 
 ### **Flow Navigation**
 
@@ -120,18 +122,17 @@ The app uses a TabBarController with three tabs:
 - Resources List Screen → Resource Detail Screen  
 - Resource Detail Screen → External link (Safari)
 
-
 ---
 
-# Activity 3: Wireframes
+# **Activity 3: Wireframes**
 
 ## Low-Fidelity Wireframes (Hand-Drawn)
 
 Below are the hand-drawn wireframes for the core screens of the College Success Toolkit app.  
 These sketches outline the layout, navigation flow, and main UI elements.
 
-
 ![Wireframe](wireframe.pdf)
+
 
 
 
