@@ -131,7 +131,7 @@ Below are the hand-drawn wireframes for the core screens of the College Success 
 These sketches outline the layout, navigation flow, and main UI elements.
 
 
-![Wireframe](wireframes/wireframe.png)
+![Wireframe](wireframe.pdf)
 
 
 
