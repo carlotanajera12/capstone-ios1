@@ -131,18 +131,7 @@ Below are the hand-drawn wireframes for the core screens of the College Success 
 These sketches outline the layout, navigation flow, and main UI elements.
 
 
+![Wireframe](wireframes/wireframe.pdf)
 
-
----
-
-## [BONUS] Digital Wireframes (Optional)
-
-If created, digital wireframes will be added here.
-
----
-
-## [BONUS] Interactive Prototype GIF (Optional)
-
-If created, the prototype GIF will be added here.
 
 
