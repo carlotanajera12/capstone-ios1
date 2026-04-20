@@ -1,4 +1,4 @@
-# College Success Toolkit — Product Spec
+# College Success Toolkit 
 
 ## **App Overview**
 
