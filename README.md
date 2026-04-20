@@ -121,3 +121,28 @@ The app uses a TabBarController with three tabs:
 - Resource Detail Screen → External link (Safari)
 
 
+---
+
+# Activity 3: Wireframes
+
+## Low-Fidelity Wireframes (Hand-Drawn)
+
+Below are the hand-drawn wireframes for the core screens of the College Success Toolkit app.  
+These sketches outline the layout, navigation flow, and main UI elements.
+
+
+
+
+---
+
+## [BONUS] Digital Wireframes (Optional)
+
+If created, digital wireframes will be added here.
+
+---
+
+## [BONUS] Interactive Prototype GIF (Optional)
+
+If created, the prototype GIF will be added here.
+
+
