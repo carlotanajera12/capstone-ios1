@@ -106,9 +106,11 @@ The app includes multiple view controllers, API integration, data persistence, a
 - Button → opens external link in Safari  
 
 ---
-
 ## Wireframes
-(Add your hand-drawn wireframe images here)
+
+![Wireframe](img.png)
+
+[View Full PDF](img.pdf)
 
 ---
 
