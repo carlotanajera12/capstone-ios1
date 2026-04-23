@@ -1,138 +1,147 @@
-# College Success Toolkit 
+# College Success Toolkit
 
-## **App Overview**
-
-### **App Description**
-College Success Toolkit is an education-focused iOS app designed to support UNCC students—especially first-years and mentees—by providing daily motivation, simple task tracking, and quick access to essential campus resources. The goal is to help students stay organized, motivated, and aware of the support systems available to them.
-
-### **App Evaluation (Mobile, Story, Market, Habit, Scope)**
-
-**Mobile**  
-- Uses mobile-native features such as tab navigation, local storage, and API calls.  
-- Designed for quick, on-the-go access to motivation, tasks, and campus resources.
-
-**Story**  
-- Strong, relatable story: supports students academically and emotionally.  
-- Clear value for mentees, first-year students, and peers navigating college life.
-
-**Market**  
-- Well-defined niche: UNCC students and similar college populations.  
-- High relevance for academic support programs and mentoring initiatives.
-
-**Habit**  
-- Encourages daily use through motivational quotes and task tracking.  
-- Resource tab provides ongoing value throughout the semester.
-
-**Scope**  
-- MVP is realistic and achievable within the course timeline.  
-- Includes API integration, TableViews, Navigation, TabBar, and UserDefaults.  
-- Stretch goals can be added without disrupting core functionality.
+## Table of Contents
+1. Overview  
+2. Product Spec  
+3. Wireframes  
+4. Schema  
 
 ---
 
-## **User Features**
+## Overview
 
-### **Required (MVP) Features**
-1. **Motivation Tab**
-   - Fetch a motivational quote from a public API using URLSession + Codable.
-   - Display quote + author.
-   - Refresh button to load a new quote.
-
-2. **Tasks Tab**
-   - View a list of tasks in a TableView.
-   - Add a new task (title + optional notes).
-   - Save tasks using UserDefaults (custom struct).
-   - Tap a task to view details.
-
-3. **Resources Tab**
-   - TableView of UNCC academic, wellness, and support resources.
-   - Detail screen with description + external link.
-   - Uses enums for resource categories.
-
-4. **Navigation**
-   - TabBarController with 3 tabs.
-   - NavigationController for detail screens.
-
-5. **Technical Requirements**
-   - Uses enums, structs, classes, protocols, closures.
-   - Uses UIKit + Storyboards + AutoLayout.
-   - Uses typecasting + optionals appropriately.
+### Description
+College Success Toolkit is an iOS application built using Swift and UIKit that helps college students stay organized, motivated, and informed about campus resources. The app provides task management, daily motivational quotes from an API, and a list of campus resources with detailed information and links.
 
 ---
 
-## **Optional (Stretch) Features**
-- Favorite quotes saved locally.
-- Task categories (Academic, Personal, Urgent).
-- Search bar for resources.
-- Custom color themes inspired by UNCC branding.
-- Simple habit tracker.
+### App Evaluation
+
+**Category:** Education / Productivity  
+
+**Mobile:**  
+The app uses mobile-native features including tab navigation, local data persistence (UserDefaults), and API integration using URLSession. It is designed for quick and simple interactions on a mobile device.
+
+**Story:**  
+The app supports college students, especially first-year students, by helping them manage tasks, stay motivated, and access important campus resources.
+
+**Market:**  
+The target audience is college students, particularly those who need help staying organized and navigating campus support systems.
+
+**Habit:**  
+Users are encouraged to return daily for motivational quotes and to manage their tasks regularly.
+
+**Scope:**  
+The app includes multiple view controllers, API integration, data persistence, and navigation. The scope is appropriate for a capstone project and demonstrates required iOS development concepts.
 
 ---
 
-## **Screen Archetypes**
+## Product Spec
 
-### **1. Motivation Screen**
-- Displays quote + author.
-- Refresh button.
-- API error label (optional).
+### 1. User Stories (Required and Optional)
 
-### **2. Tasks List Screen**
-- TableView of tasks.
-- “Add Task” button.
-- Persistent storage via UserDefaults.
+#### Required Must-have Stories
+- User can view a list of tasks  
+- User can add a new task  
+- User can edit or delete tasks  
+- User can mark tasks as complete  
+- User can view motivational quotes from an API  
+- User can refresh quotes  
+- User can save a favorite quote locally  
+- User can view a list of campus resources  
+- User can tap a resource to view details  
+- User can open a resource link in Safari  
 
-### **3. Add Task Screen**
-- Text field for task title.
-- Optional notes field.
-- Save button.
-
-### **4. Task Detail Screen**
-- Shows full task info.
-- Option to delete task.
-
-### **5. Resources List Screen**
-- TableView of UNCC resource categories.
-- Each cell leads to a detail page.
-
-### **6. Resource Detail Screen**
-- Description of the resource.
-- Button to open external link in Safari.
+#### Optional Nice-to-have Stories
+- User can categorize tasks  
+- User can improve UI styling  
+- User can add more detailed task information  
+- User can add search functionality for resources  
 
 ---
 
-## **Navigation Flow**
+### 2. Screen Archetypes
 
-### **Tab Navigation**
-The app uses a TabBarController with three tabs:
-1. **Motivation**
-2. **Tasks**
-3. **Resources**
+**Motivation Screen**  
+- User can view a motivational quote  
+- User can refresh the quote  
+- User can save a favorite quote  
 
-### **Flow Navigation**
+**Tasks List Screen**  
+- User can view all tasks  
+- User can add a task  
+- User can delete a task  
+- User can mark a task complete  
 
-#### **Motivation Tab**
-- Motivation Screen → (Refresh button reloads API)
+**Resources List Screen**  
+- User can view a list of resources  
+- User can select a resource  
 
-#### **Tasks Tab**
-- Tasks List Screen → Add Task Screen  
-- Tasks List Screen → Task Detail Screen  
-- Task Detail Screen → Back to Tasks List
-
-#### **Resources Tab**
-- Resources List Screen → Resource Detail Screen  
-- Resource Detail Screen → External link (Safari)
+**Resource Detail Screen**  
+- User can view detailed information about a resource  
+- User can open the resource link  
 
 ---
 
-# **Activity 3: Wireframes**
+### 3. Navigation
 
-## Low-Fidelity Wireframes (Hand-Drawn)
+#### Tab Navigation (Tab to Screen)
+- Motivation Tab → Motivation Screen  
+- Tasks Tab → Tasks List Screen  
+- Resources Tab → Resources List Screen  
 
-Below are the hand-drawn wireframes for the core screens of the College Success Toolkit app.  
-These sketches outline the layout, navigation flow, and main UI elements.
+#### Flow Navigation (Screen to Screen)
 
-![Wireframe](wireframe.pdf)
+**Motivation Screen**
+- Refresh button → loads new API data  
 
+**Tasks List Screen**
+- Add button → alert input for new task  
+- Tap task → edit task or toggle completion  
 
+**Resources List Screen**
+- Tap resource → Resource Detail Screen  
 
+**Resource Detail Screen**
+- Button → opens external link in Safari  
 
+---
+
+## Wireframes
+(Add your hand-drawn wireframe images here)
+
+---
+
+## Schema
+
+### Models
+
+**Task**
+- title: String  
+- isCompleted: Bool  
+
+**Quote**
+- q: String  
+- a: String  
+
+**Resource**
+- title: String  
+- summary: String  
+- url: String  
+- type: ResourceType  
+
+---
+
+### Networking
+
+**Motivation Screen**
+- GET https://zenquotes.io/api/random  
+
+Example response:
+
+[
+{
+"q": "Quote text",
+"a": "Author"
+}
+]
